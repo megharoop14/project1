@@ -6,6 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class WishlistPage {
+	@FindBy(xpath="//a[text()='X']")
+	 // //a[text()='close_cookies']
+	private WebElement cookie;
+	
 	@FindBy(xpath="//button[@aria-label='Play']")
 	private WebElement playbtn;
 	
@@ -29,6 +33,10 @@ public class WishlistPage {
 	
 	public void addtowishlistbtn() {
 		addtowishlist.click();
+	}
+
+	public void cookieclose() {
+       cookie.click();		
 	}
 	
 	

@@ -21,7 +21,9 @@ public class Testcase3  extends BaseClass {
 	cp.java();
 	
 	WishlistPage wp=new WishlistPage(driver);
+	wp.cookieclose();
     driverutilies.switchFrame(driver);
+    Thread.sleep(3000);
     wp.playbutton();
     Thread.sleep(10000);
     wp.pausebutton();
